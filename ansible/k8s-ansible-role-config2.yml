@@ -1,0 +1,14 @@
+
+
+- name: Config role
+  hosts: localhost
+  gather_facts: yes
+  user: root
+  become: no
+  
+
+
+  tasks:
+    - name: Configure  using role
+      import_role:
+        name: k8s-ansible-role
